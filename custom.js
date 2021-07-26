@@ -11,6 +11,35 @@ $('input[name="selected_tip"]').click(function(){
         $('.tip_amount').text('$'+eachtip.toFixed(2));
         $('.total_tip_amount').text('$'+totaltip.toFixed(2));
     }
+    else{
+        $('.tip_amount').text('$0.00');
+        $('.total_tip_amount').text('$0.00');
+    }
+    
+});
+$('.tipvalue').on("keyup keypress focusin focusout",function(){
+    var tippercent = $(this).val();
+    if(tippercent > 0.00 && tippercent <=100.00){
+        $(this).removeClass('errorinput');
+        var bill = $('input[name="bill"]').val();
+        var people = $('input[name="people"]').val();
+        var isOkay = false;
+        if(errorFunction(bill, people)){
+            bill =  parseFloat(bill);
+            people = parseFloat(people);
+            var totaltip = ( bill + ( bill * tippercent / 100) )/people;
+            var eachtip = (bill/people)*(tippercent/100);
+            $('.tip_amount').text('$'+eachtip.toFixed(2));
+            $('.total_tip_amount').text('$'+totaltip.toFixed(2));
+        }
+        else{
+            $('.tip_amount').text('$0.00');
+            $('.total_tip_amount').text('$0.00');
+        }
+    }
+    else{
+        $(this).addClass('errorinput');
+    }
     
 });
 function errorFunction(bill, people){
