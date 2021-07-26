@@ -70,9 +70,10 @@ input, button {
 
 .form-group label {
   margin: 0.25em 0;
+  font-size: 0.85rem;
 }
 
-input[type="text"] {
+.textinput {
   font-size: 1.3rem;
   width: 100%;
   text-align: right;
@@ -85,7 +86,7 @@ input[type="text"] {
   font-weight: 700;
 }
 
-input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus-visible {
+.textinput:hover, .textinput:active, .textinput:focus-visible {
   outline: none !important;
   border-color: var(--primary-color);
   cursor: pointer;
@@ -181,6 +182,28 @@ input[type="button"]:hover, input[type="button"]:focus, .reset:hover, .reset:foc
   position: absolute;
   top: 25%;
   padding: 0.1em 0.5em;
+}
+
+.labels {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.errorLabel {
+  color: #f50a0a;
+  display: none;
+}
+
+.textinput.errorinput {
+  border-color: #f50a0a;
+}
+
+.textinput.errorinput:hover, .textinput.errorinput:active, .textinput.errorinput:focus-visible {
+  border-color: #f50a0a;
 }
 
 .attribution {

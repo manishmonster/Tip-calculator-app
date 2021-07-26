@@ -53,9 +53,10 @@ input,button{
     display: grid;
     label{
     margin: 0.25em 0;
+    font-size: 0.85rem;
     }
 }
-input[type="text"] {
+.textinput {
     font-size: 1.3rem;
     width: 100%;
     text-align: right;
@@ -137,6 +138,20 @@ border-color: var(--bg-color);
         position: absolute;
         top: 25%;
         padding: 0.1em 0.5em;
+    }
+}
+.labels {
+    justify-content: space-between;
+    display: flex;
+}
+.errorLabel {
+    color: hsl(0, 92%, 50%);
+    display: none;
+}
+.textinput.errorinput{
+    border-color: hsl(0, 92%, 50%);
+    &:hover, &:active, &:focus-visible {
+        border-color: hsl(0, 92%, 50%) ;
     }
 }
 .attribution { font-size: 11px; text-align: center; }
