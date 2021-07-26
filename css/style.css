@@ -156,6 +156,16 @@ input[type="button"] {
   border-radius: .25em;
 }
 
+.input-icon {
+  position: relative;
+}
+
+.input-icon .icon {
+  position: absolute;
+  top: 25%;
+  padding: 0.1em 0.5em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
