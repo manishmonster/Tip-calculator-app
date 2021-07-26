@@ -10,30 +10,48 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
+  <div role="header" class="logo">
+    <img src="images/logo.svg" alt="Logo" role="Logo">
+  </div>
+  <div class="card">
+    <div class="calculator">
+      <div class="form-group">
+        <label for="enteredbill">Bill</label>
+        <div class="placeholder-input">
+          <input type="text" name="bill" id="enteredbill" placeholder="0">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="enteredbill">Select Tip %</label>
+        <input type="button" value="5" title="5%">    
+        <input type="button" value="10" title="10%">    
+        <input type="button" value="15" title="15%">    
+        <input type="button" value="20" title="20%">    
+        <input type="button" value="15" title="15%"> 
+        <input type="text" name="custom" placeholder="Custom" id="tippercentage">
+      </div>
+      <div class="form-group">
+        <label for="peoplenumber">Number of People</label>
+        <div class="placeholder-input">
+          <input type="text" name="bill" id="peoplenumber" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="results">
+      <div class="result">
+        <p class="heading">Tip Amount<span>/ person</span></p>
+        <p class="tip_amount resultamount"></p>
+      </div>
+      <div class="result">
+        <p class="heading">Total<span>/ person</span></p>
+        <p class="total_tip_amount resultamount"></p>
+      </div>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+  <div class="attribution" role="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/manishmonster" >Manish Twayana</a>.
   </div>
 </body>
 </html>

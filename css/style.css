@@ -15,6 +15,10 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
+input {
+  font-size: 24px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
