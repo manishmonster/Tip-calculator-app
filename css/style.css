@@ -4,7 +4,7 @@
   --cyan: hsl(183, 100%, 15%);
   --input-color: hsl(186, 14%, 43%);
   --font-color: hsl(184, 14%, 56%);
-  --color1: hsl(185, 41%, 84%);
+  --bg-color: hsl(185, 41%, 84%);
   --color2: hsl(189, 41%, 97%);
   --White: hsl(0, 0%, 100%);
 }
@@ -13,10 +13,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Space Mono', monospace;
+  background-color: var(--bg-color);
 }
 
 input {
   font-size: 24px;
+}
+
+.logo {
+  text-align: center;
+  margin: 6em auto;
 }
 
 .attribution {
