@@ -28,7 +28,7 @@ body {
           box-sizing: border-box;
 }
 
-input {
+input, button {
   font-family: 'Space Mono', monospace;
 }
 
@@ -81,6 +81,14 @@ input[type="text"] {
   background: var(--color2);
   padding: 0.1em 0.5em;
   margin: 0.25em 0;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus-visible {
+  outline: none !important;
+  border-color: var(--primary-color);
+  cursor: pointer;
 }
 
 .results {
@@ -145,15 +153,24 @@ input[type="button"] {
   background: var(--cyan);
   border: 1px solid var(--cyan);
   border-radius: .25em;
+  font-weight: 600;
 }
 
 .reset {
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--cyan);
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: .25em;
+  font-weight: 600;
+  padding: 0.1em 0;
+}
+
+input[type="button"]:hover, input[type="button"]:focus, .reset:hover, .reset:focus {
+  background: var(--bg-color);
+  color: var(--cyan);
+  border-color: var(--bg-color);
 }
 
 .input-icon {
