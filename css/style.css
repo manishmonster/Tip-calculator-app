@@ -72,6 +72,31 @@ input {
   font-size: 2em;
 }
 
+input[type="text"] {
+  text-align: right;
+  border-radius: 0.2em;
+  border: 1px solid var(--color2);
+  background: var(--color2);
+  padding: 0.1em 0.5em;
+}
+
+input[type="button"] {
+  font-size: 1.3rem;
+  color: var(--color2);
+  background: var(--cyan);
+  border: 1px solid var(--cyan);
+  border-radius: .25em;
+}
+
+.reset {
+  width: 100%;
+  font-size: 1.3rem;
+  color: var(--cyan);
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: .25em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
