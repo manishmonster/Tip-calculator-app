@@ -191,4 +191,34 @@ input[type="button"]:hover, input[type="button"]:focus, .reset:hover, .reset:foc
 .attribution a {
   color: #3e52a3;
 }
+
+@media screen and (max-width: 834px) {
+  body {
+    font-size: 15px;
+  }
+  input[type="text"], input[type="button"] {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .card {
+    width: 85%;
+    display: -ms-grid;
+    display: grid;
+  }
+  input[type="text"], input[type="button"] {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .card {
+    width: 100%;
+  }
+  .inputs {
+    -webkit-columns: 2;
+            columns: 2;
+  }
+}
 /*# sourceMappingURL=style.css.map */

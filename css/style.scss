@@ -141,3 +141,29 @@ border-color: var(--bg-color);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width: 834px){
+    body{
+        font-size: 15px;
+    }
+    input[type="text"],input[type="button"]{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 730px){
+    .card{
+        width: 85%;
+        display: grid;
+    }
+    input[type="text"],input[type="button"]{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 505px) {
+    .card{
+        width: 100%;
+    }
+    .inputs{
+        columns: 2;
+    }
+    
+}
