@@ -45,6 +45,33 @@ input {
           flex: 1;
 }
 
+.results {
+  background: var(--cyan);
+  border-radius: 1em;
+  color: var(--color2);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1em 2em;
+}
+
+.results .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.results .result span {
+  display: block;
+  color: var(--font-color);
+  font-size: 0.8rem;
+}
+
+.results .result .tip_amount {
+  color: var(--primary-color);
+  font-size: 2em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
